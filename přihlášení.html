@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
 <body>
-    <label for="email">Přihlašovací email</label>
-    <input type="email">
 
-    <label for="password">Heslo</label>
-    <input type="password">
+
+    <label for="email">Přihlašovací email:</label>
+    <input class="border-2 border-rounded-xl" type="email" name="email" form="POST">
+
+    <label for="password">Heslo:</label>
+    <input class="border-2 border-rounded-xl" type="password" id="password" type="button" name="password" form="POST">
+    <input type="button" form="POST">
+
+    <label for="date">Vyber datum pro rezervaci dne vydání povolenky:</label>
+    <input type="date" name="date" form="POST">
+
 
 
 
