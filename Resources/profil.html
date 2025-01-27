@@ -1,30 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-</head>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
 <body>
-<div class="flex flex-row">
-    <div class="flex h-screen">
-
+    <div class="flex flex-row">
+         
+        <div>
     
-    <aside class="bg-green-300 w-3/2 pt-8">
-    <nav>
-        <div class="flex items-center pb-8">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/>
-            </svg> 
-            <div class="underline">
-                <h4 class="text-xl">
-                   <strong> Navigace:</strong>
+         <aside class="bg-green-300 pl-16 pt-8">
+            <nav class="h-screen">
+                <div class="flex items-center pb-8">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/>
+                                 </svg> 
+                    <div class="underline">
+                          <h4 class="text-xl">
+                                    <strong> Navigace: </strong>
         
-                 </h4>
+                         </h4>
                 
-            </div>
+                     </div>
 
-        </div>
+                 </div>
 
 
         <ul class="py-2">
@@ -50,14 +49,14 @@
             <div class="hover:bg-green-600">
                 <a href="">
             
-                    <div  class="flex items-center">
+                    <div class="flex items-center">
 
                         
 
                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-1"><path d="M11 14h1v4"/><path d="M16 2v4"/><path d="M3 10h18"/><path d="M8 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/></svg>
                         
                          <li>
-                            <strong>Zadat rezervaci na termín vydání povolenky</strong>
+                            <strong class="mt-1 block text-lg leading-tight font-medium">Zadat rezervaci na termín vydání povolenky</strong>
                         </li>
                     </div>
                 </a>
@@ -74,7 +73,7 @@
 
                          <li>
                
-                            <strong>Uložené evidované rezervace</strong>
+                            <strong class="mt-1 block text-lg leading-tight font-medium">Uložené evidované rezervace</strong>
 
                         </li>
                      </div>
@@ -92,7 +91,7 @@
 
                         <li>
                
-                             <strong>Nabídka povolenek k lovu ryb</strong>
+                             <strong class="mt-1 block text-lg leading-tight font-medium">Nabídka povolenek k lovu ryb</strong>
 
                         </li>
                     </div>
@@ -111,7 +110,7 @@
 
                          <li>
                
-                            <strong>Návod jak si vytvořit profil v RIS <hr>(rybářský informační systém)</strong>
+                            <strong class="mt-1 block text-lg leading-tight font-medium">Návod jak si vytvořit profil v RIS (rybářský informační systém)</strong>
 
                         </li>
                      </div>
@@ -156,13 +155,13 @@
                  </a>
             </div> 
         </ul>
-    </nav>
+     </nav>
 
-    </aside>
-</div>
-        <div class="flex-row">
+     </aside>
+    </div>
+        <div class="lg:flex-l">
             <div class="w-full">
-                <main class="flex bg-green-600">
+                <main class="bg-green-600">
 
                      <header class="p-4">
                         <Strong class="text-2xl underline">
@@ -178,25 +177,30 @@
              </div>
        
     
-         <section class="flex h-screen">
-           <div class="bg-green-600 border border-black-850">
+            
+
+             <div class="bg-[url('./sumci.jpeg')] h-screen bg-center">
+                
+                
+                        <section>
+                            <div>
                  
-                <p class="py-16">
+                              <p class="bg-green-950 text-xl lg:text-2xl text-white mt-1 block text-lg leading-tight font-medium">
                     
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, corporis eveniet aperiam, saepe commodi, adipisci eius doloremque dolor ex officiis amet? Nostrum accusamus libero autem similique ipsum? Nihil, eius.
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, corporis eveniet aperiam, saepe commodi, adipisci eius doloremque dolor ex officiis amet? Nostrum accusamus libero autem similique ipsum? Nihil, eius.
                     
-                </p>
+                              </p>
+
+                            </div>
 
 
 
-
+                         </section>
             </div>
 
 
-
-         </section>
+        </div>     
         
-        </div>   
     </div>
 </body>
 </html>
