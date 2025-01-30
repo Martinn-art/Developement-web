@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <title>STOPA nechte stopu příběhem</title>
 </head>
 <body>  
   
     <header>
-      <div class="bg-[url('https://images.app.goo.gl/5kFpKy1eCbCwYp3G9')]">
+      <div class="bg-violet-900 uppercase text-white text-center border-xl">
            
       
-          <h4> STOPA - Příběhy, povídky, pohádky... Zanechte svou stopu na tomto webu, povyprávějte příběh, sen nebo jen myšlenku a podepište se nebo zůstaňte anonymní. 
+          <h4 class="relative"> STOPA - Příběhy, povídky, pohádky... Zanechte svou stopu na tomto webu, povyprávějte příběh, sen nebo jen myšlenku a podepište se nebo zůstaňte anonymní. 
           </h4>
            
-        </div> 
+      </div> 
         
      
     </header>
@@ -26,11 +27,23 @@
      <main class="bg-violet-800">
       <nav class="flex items-center justify-center gap-4 text-xl underline mt-0,5">
         <h6 class="flex gap-4">
-          <ul>
-            <a href="" class="group-hover:bg-violet">
-               <li class="flex gap-2 hover:text-green-100 px-0 py-1 rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" x2="3" y1="12" y2="12"/></svg>
-                <p>přihlásit</p>
+          <ul class="group-hover:bg-violet">
+            <div x-data="{ open: true }">
+              <button @mouseenter="open = ! open">
+                <li class="flex gap-2 hover:text-green-100 px-0 py-1 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" x2="3" y1="12" y2="12"/></svg>přihlásit</button>
+       
+                    <div x-show="open">
+                    <div class="flex flex-items justify-center absolute:bottom-800 bg:opacity-100">
+                     Klikni a přihlas se
+                    </div>
+                  </div>
+             
+          </div>
+             
+
+
+
       
               </li>
             </a>
@@ -70,9 +83,8 @@
 
      </main>
 
-     <section class="flex items size-1/2">
-        <img src="C:\Developement web\IMAG0188.jpg" alt="řeka">
-        <img src="C:\Developement web\IMAG0166.jpg" alt="stromy">
+     <section class="bg-[url('./more.jpg')] h-screen w-screen lg:bg-repeat-none img-center bg-center flex items justify-center size-1/2">
+  
         
         <div>
            <h3>Jak na psaní příspěvků na tomto webu?</h3>
@@ -97,16 +109,70 @@
               MN
             </p>
 
-            <p>Super admin
-
-            </p>
+           
 
         </div>
 
 
-  
+        <div x-data="{ open: false }">
+          <button @mouseenter="open = ! open">Toggle Modal</button>
+   
+          <template x-teleport="body">
+              <div x-show="open">
+                  Modal contents...
+              </div>
+          </template>
+      </div>
+   
+      <div>Some other content placed AFTER the modal markup.</div>
+        
 
 
+        <div x-data="{ greeting: 'Hello' }">
+          <div x-data="{ name: 'Caleb' }">
+              <button @click="sayHello($data)">Say Hello</button>
+          </div>
+      </div>
+       
+      <script>
+          function sayHello({ greeting, name }) {
+              alert(greeting + ' ' + name + '!')
+          }
+      </script>
+
+
+
+        <div x-data="{ open: false }" x-init="$watch('open', value => console.log(value))">
+          <button @click="open = ! open">Toggle Open</button>
+      </div>
+
+        <div x-data="{ foo: { bar: 'baz' }}" x-init="$watch('foo.bar', value => console.log(value))">
+          <button @click="foo.bar = 'bob'">Toggle Open</button>
+      </div>
+
+        <button x-data="{ label: 'Click Here' }" x-text="label"></button>
+
+
+        <div x-data="{ open: 'over' }">
+          <div x-data="{ label: 'Content:' }">
+              <span x-text="label"></span>
+              <span x-show="open"></span>
+          </div>
+      </div>
+
+
+        <div x-data="{ title: 'Start Here' }">
+          <h1 x-text="title"></h1>
+      </div>
+
+   
+        <div x-data="{ open: true }">
+        <button @over="open = ! open">Toggle Content</button>
+     
+        <div x-show="open">
+            Content...
+        </div>
+    </div>
     
  
 </body>
