@@ -87,8 +87,8 @@
   
         
         <div>
-           <h3>Jak na psaní příspěvků na tomto webu?</h3>
-           <p>1. Zaregistrujete se - bez toho to nepůjde
+           <h3 id="h3"> Jak na psaní příspěvků na tomto webu? </h3>
+           <p id="p1"> 1. Zaregistrujete se - bez toho to nepůjde
 
               
            </p>
@@ -166,14 +166,27 @@
       </div>
 
    
-        <div x-data="{ open: true }">
-        <button @over="open = ! open">Toggle Content</button>
-     
-        <div x-show="open">
-            Content...
+   
+      </div>
         </div>
     </div>
     
  
+    <div x-data="{ open: true }">
+      <button @click="open = false" x-show="open">Hide Me</button>
+  </div>
+   
+  <button x-data="{ open: true }" @click="open = false" x-show="open">
+      Hide Me
+  </button>
+
+
+
+
+<br>
+<br>
+<br>
+     
+
 </body>
 </html>
