@@ -13,6 +13,9 @@
     | (tj. každé číslo se objeví jen jednou). Výsledek by měl být například:
     |   [1, 2, 3, 4, 5, 6]
 */
+
+use PhpOption\None;
+
 $pole1 = [1, 2, 3, 4];
 $pole2 = [3, 4, 5, 6];
 
@@ -126,26 +129,23 @@ echo ctverec($cislo);
     | Napište PHP kód, který projde toto pole a vypíše pouze čísla, která jsou
     | větší než 20.
 */
-/*$cisla = [5, 12, 18, 21, 30, 42];
-    |
+ 
+$cisla = [5, 12, 18, 21, 30, 42];
 
 foreach ($cisla as $cislo) {
 
-    if ($cislo>20) {
-        echo "$cislo",
-    }{
-        else () 
-            echo "$cislo";
-        
-
-       
-
-        
+    if ($cislo> 20) {
+       return "$cislo je větší než 20";
+  
     }
+        return "none";
+        
+       
+       
+    }
+        echo $cislo;
 
 
-}
-*/
 
 
 
@@ -160,17 +160,22 @@ foreach ($cisla as $cislo) {
     |   - Pokud ano, vrátí text "Číslo je: {hodnota}".
     |   - Pokud ne, vrátí text "Zadaná hodnota není číslo.".
 */
-/*$hodnota = [2];
+$hodnota= 2;
 
-function kontrolaCisla($hodnota = $hodnoty) {
+function kontrolaCisla ($hodnota === is_numeric()) 
 
-    is_numeric($hodnoty);
-    if true 
+{
+
+    return "yes";{
+}
+
+    return "no";
 
 
 }
 
-*/
+
+echo kontrolaCisla()
 
 /*
     |--------------------------------------------------------------------------
