@@ -78,6 +78,17 @@ echo celsiusToFahrenheit($celsius[0]);
     |       'vek'      => 30
     |   ]
 */
+
+$klice   = ['jmeno', 'prijmeni', 'vek'];
+$hodnoty = ['Jan', 'Novak', 30];
+
+$pairs = array_combine($klice, $hodnoty);
+
+foreach ($pairs as $klice => $hodnoty);
+
+echo $klice . "=>" . $hodnoty . "<br>";
+
+
 /*
 $klice   = ['jmeno', 'prijmeni', 'vek'];
 $hodnoty = ['Jan', 'Novak', 30];
@@ -162,9 +173,7 @@ foreach ($cisla as $cislo) {
 */
 $hodnota= 2;
 
-function kontrolaCisla ($hodnota === is_numeric()) 
-
-{
+if (is_numeric($hodnota)){
 
     return "yes";{
 }
@@ -175,7 +184,7 @@ function kontrolaCisla ($hodnota === is_numeric())
 }
 
 
-echo kontrolaCisla()
+echo($hodnota)
 
 /*
     |--------------------------------------------------------------------------
@@ -190,6 +199,23 @@ echo kontrolaCisla()
     |   - Pokud je $vek menší než 18, vypíše "Ahoj, mladý Jan!".
     |   - Pokud je $vek 18 a více, vypíše "Vítej, Jan!".
 */
+
+$jmeno = "Jan";
+$vek   = 17;
+
+if (float||int $vek <18) {
+    return ("Ahoj mladý " .$jmeno){
+
+
+
+    } return ("Vítej " .$jhmeno) {
+
+        
+    }
+}
+
+
+
 
 /*
     |--------------------------------------------------------------------------
