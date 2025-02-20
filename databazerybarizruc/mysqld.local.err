@@ -67,3 +67,8 @@
 2025-02-20T13:07:27.698790Z 0 [System] [MY-015015] [Server] MySQL Server - start.
 2025-02-20T13:07:27.859742Z 0 [System] [MY-010116] [Server] C:\Users\marta\AppData\Local\com.tinyapp.DBngin\Binaries\mysql\8.4.2\bin\mysqld.exe (mysqld 8.4.2) starting as process 10740
 2025-02-20T13:07:27.879533Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-02-20T13:07:28.159262Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-02-20T13:07:28.477449Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2025-02-20T13:07:28.477900Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2025-02-20T13:07:28.538972Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2025-02-20T13:07:28.539171Z 0 [System] [MY-010931] [Server] C:\Users\marta\AppData\Local\com.tinyapp.DBngin\Binaries\mysql\8.4.2\bin\mysqld.exe: ready for connections. Version: '8.4.2'  socket: ''  port: 3306  MySQL Community Server - GPL.
