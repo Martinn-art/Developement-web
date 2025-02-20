@@ -1,6 +1,0 @@
-2025-02-19T17:14:09.701168Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
-2025-02-19T17:14:09.707232Z 0 [System] [MY-013169] [Server] C:\Users\marta\AppData\Local\com.tinyapp.DBngin\Binaries\mysql\8.4.2\bin\mysqld.exe (mysqld 8.4.2) initializing of server in progress as process 11552
-2025-02-19T17:14:09.738184Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-2025-02-19T17:14:10.116371Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-2025-02-19T17:14:11.809112Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
-2025-02-19T17:14:13.498378Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.

@@ -1,8 +1,0 @@
-[mysqld]
-port=3306
-basedir="C:/Users/marta/AppData/Local/com.tinyapp.DBngin/Binaries/mysql/8.4.2"
-datadir="C:/DevelopementWeb/databazerybarizruc"
-plugin-dir="C:/Users/marta/AppData/Local/com.tinyapp.DBngin/Binaries/mysql/8.4.2/lib/plugin"
-log-error="C:/DevelopementWeb/databazerybarizruc/mysqld.local.err"
-pid-file="C:/DevelopementWeb/databazerybarizruc/mysql.pid"
-skip-log-bin
