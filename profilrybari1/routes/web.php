@@ -6,4 +6,9 @@ use App\Http\Controllers\Authcontroller;
 
 
 
-Route::get('/', [Authcontroller::class, 'store']);
+
+Route::get('/', [AuthController::class, 'index']);
+
+
+Route::get('/register', [Authcontroller::class, 'store']);
+
