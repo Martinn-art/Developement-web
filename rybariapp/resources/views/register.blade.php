@@ -26,6 +26,7 @@
     <label for="password">Heslo</label>
     <input type="password" name="password"class="border-2">
     <x-button>Registrovat</x-button>
+    <a class="hover:underline" href="/login">Zde se přihlásíte...</a>
 </div>
 </form>
 
