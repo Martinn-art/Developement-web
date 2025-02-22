@@ -8,8 +8,19 @@
     <title>Document</title>
 </head>
 <body class="flex flex-items justify-center bg-[url('../../public/PIC/SUMCI.jpg')] bg-cover h-screen bg-bottom">
+    <x-_header>
+        <h2>
+            Vítejte
+        </h2>
 
-    
+    <x-_start>
+
+
+    </x-_start>
+
+
+
+    </x-_header>
 
 
 
