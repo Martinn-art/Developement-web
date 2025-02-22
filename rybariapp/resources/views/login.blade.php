@@ -7,6 +7,8 @@
     @vite('resources/css/app.css')
     <title>Document</title>
 </head>
+    <x-_header>
+    </x-_header>
 <x-_dashboard>
 <body class="flex flex-items justify-center bg-[url('../../public/PIC/SUMCI.jpg')] bg-cover h-screen bg-bottom">
 

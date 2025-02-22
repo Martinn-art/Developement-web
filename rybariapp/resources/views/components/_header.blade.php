@@ -2,7 +2,7 @@
 
 
 
-    <header class="p-4 lg:flex justify-stretch">
+    <header class="p-4 lg:flex justify-center">
 
        <h1>
 
@@ -10,7 +10,6 @@
             <Strong class="text-5xl text-underline tracking-wide text-left align-top">
                 <img class="float-right" src="..\..\PIC\LOGO.png" alt="LOGO Rybáři Zruč n/S">
                 Rezervační webové stránky
-                pro rybáře z
                 MO Zruč nad Sázavou
             </Strong>
         </div>
@@ -25,4 +24,3 @@
 
 
 
-  

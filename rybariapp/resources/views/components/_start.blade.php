@@ -1,6 +1,6 @@
 </div>
 
-<section class="bg-green-700 bg-opacity-45 text-center lg:mx-32">
+<section class="bg-green-700 m-8 bg-opacity-45 text-center lg:mx-8">
 
 
         <p class="text-xl lg:text-2xl leading-tight font-medium">
@@ -18,7 +18,7 @@
 
 </section>
 
-<section class="bg-blue-400 m-8 bg-opacity-45 text-center lg:m-16">
+<section class="bg-blue-400 m-8 bg-opacity-45 text-center lg:m-8">
 
 <p class="text-2xl lg:text-4xl leading-tight font-medium">
     Pokud ještě nejste zaregistrováni, pro další pokračování se zaregistrujte zde:

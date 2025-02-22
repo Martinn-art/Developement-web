@@ -8,7 +8,8 @@
     <title>Document</title>
 </head>
 <body class="bg-[url('/components/Pictures/SUMCI.jpg')]">
-
+<x-_profil>
+</x-_profil>
 
 </body>
 </html>
