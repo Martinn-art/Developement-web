@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
-    <title>Document</title>
+    <title>register</title>
 </head>
 <x-_header>
 </x-_header>
-<x-_dashboard>
-<body class="flex flex-items justify-center bg-[url('../../public/PIC/SUMCI.jpg')] bg-cover h-screen bg-bottom">
+<body class="bg-[url('../../public/PIC/SUMCI.jpg')] bg-cover h-screen bg-bottom">
 
-<form action="/register" method="POST">
+<div class="flex items-center justify-center">
+<form action="/register" method="POST" class="max-w-xs bg-green-400 bg-opacity-45">
     @csrf
-    <h1 class="text-center text-3xl m-8" >Registrovat</h1>
+    <h1 class="text-center text-3xl m-8" >Registrovat
+
+    </h1>
 
     @session('message')
         <p>Registrace proběhla v pořádku</p>
@@ -30,8 +32,18 @@
     <x-button>Registrovat</x-button>
     <a class="hover:underline" href="/login">Zde se přihlásíte...</a>
 </div>
-</form>
 
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+</form>
+</div>
 </body>
-</x-_dashboard>
+
 </html>

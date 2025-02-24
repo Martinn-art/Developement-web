@@ -7,7 +7,11 @@
     @vite('resources/css/app.css')
     <title>Document</title>
 </head>
-<body class="bg-[url('/components/Pictures/SUMCI.jpg')]">
+<x-_header>
+
+</x-_header>
+
+<body class="bg-[url('../../public/PIC/SUMCI.jpg')] bg-cover h-screen bg-bottom">
 <x-_profil>
 </x-_profil>
 
