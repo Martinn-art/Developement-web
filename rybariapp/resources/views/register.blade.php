@@ -26,9 +26,9 @@
     <label for="name">Jméno</label>
     <input type="text" name="name" value="{{ old('name') }}" class="border-2">
     <label for="email">Email</label>
-    <input type="email" name="email" value="{{ old('email') }}"class="border-2">
+    <input type="email" name="email" value="{{ old('email') }}" class="border-2">
     <label for="password">Heslo</label>
-    <input type="password" name="password"class="border-2">
+    <input type="password" name="password" class="border-2">
     <x-button>Registrovat</x-button>
     <a class="hover:underline" href="/login">Zde se přihlásíte...</a>
 </div>

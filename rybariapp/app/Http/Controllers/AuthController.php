@@ -58,8 +58,7 @@ public function authenticate(Request $request): RedirectResponse
 if (Auth::attempt($credentials)) {
 $request->session()->regenerate();
 
-    return redirect()->intended('dashboard');
-
+return redirect()->intended('dashboard');
 }
 return back()->withErrors([
     'email' => 'Nesprávný email nebo heslo',
@@ -68,6 +67,5 @@ return back()->withErrors([
 
 
 }
-
 
 }

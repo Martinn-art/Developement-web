@@ -17,23 +17,23 @@
     @csrf
 
     <h1 class="text-center text-3xl m-8">Přihlásit se</h1>
-<div class=" flex flex-col">
-    <label for="email">E-mail</label>
-    <input type="email" name="email" value="">
+<div class="flex flex-col">
+    <label for="email"> E-mail </label>
+    <input type="email" name="email">
 
     <label for="password">Heslo</label>
     <input type="password" name="password">
     <x-button>Přihlásit se</x-button>
     <a class="hover:underline" href="/register">Ještě nemáte účet, klikněte pro založení</a>
 </div>
-
 @if ($errors->has('email'))
     <div class="text-red-500">
         {{ $errors->first('email') }}
-    </div>
-@endif
+
     </form>
 
+    </div>
+@endif
 
 </div>
 
