@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    <title>register</title>
-</head>
+
 <x-_header>
-</x-_header>
-<body class="bg-[url('../../public/PIC/SUMCI.jpg')] bg-cover h-screen bg-bottom">
+
 
 <div class="flex items-center justify-center">
 <form action="/register" method="POST" class="max-w-xs bg-green-400 bg-opacity-45">
@@ -18,7 +9,7 @@
 
     </h1>
 
-    @session('message')
+    @session('$message')
         <p>Registrace proběhla v pořádku</p>
     @endsession
 
@@ -44,6 +35,5 @@
 @endif
 </form>
 </div>
-</body>
+</x-_header>
 
-</html>

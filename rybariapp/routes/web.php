@@ -11,7 +11,15 @@ Route::get('/register', [AuthController::class, 'index']);
 Route::get('/login', [AuthController::class, 'login']);
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', [ReservationController::class, 'index']);});
+
+    Route::get('/dashboard', [ReservationController::class, 'index']);
+    Route::get('/dashboardForm', [ReservationController::class, 'dashboardForm']);
+    Route::post('/dashboardForm', [ReservationController::class, 'StoreForm']);
+    Route::get('/dashboardView', [ReservationController::class, 'StoreForm']);
+    Route::get('/dashboardView', [ReservationController::class, 'TableView']);
+});
+
+
 
 Route::post('/register', [AuthController::class, 'store']);
 Route::post('/login', [AuthController::class, 'authenticate']);

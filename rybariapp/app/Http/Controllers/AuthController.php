@@ -45,7 +45,7 @@ public function store(Request $request)
             "password" => $validated['password'],
         ]);
 
-    return redirect('/register')-> with('message', 'Registrace proběhla v pořádku');
+    return redirect('/login')-> with('message', 'Registrace proběhla v pořádku');
 }
 
 public function authenticate(Request $request): RedirectResponse

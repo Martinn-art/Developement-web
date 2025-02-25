@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    <title>Document</title>
-</head>
-<body class="bg-[url('../../public/PIC/SUMCI.jpg')] bg-cover h-screen bg-bottom bg-no-repeat">
-    <x-_header>
+<x-_header>
+
         <div class="lg:flex items-center justify-center">
         <h2 class="text-center text-xl bg-blue-400 lg:text-4xl lg:text-wrap lg:bg-cover lg:max-w-2xl">
             Vítejte na stránkách určených pro zájemce o povolenku vystavenou
@@ -22,11 +13,10 @@
 
 
 
-    </x-_header>
 
 
 
 
-</body>
-</html>
+
+</x-_header>
 

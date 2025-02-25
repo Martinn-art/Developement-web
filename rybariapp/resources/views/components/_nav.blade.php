@@ -1,11 +1,11 @@
+<div>
 
-<body>
     <div class="flex flex-row">
 
         <div class="flex-items">
 
-         <aside class="bg-green-300 max-w-xs lg:h-screen">
-            <nav class="h-320 lg:h-screen lg:w-64">
+         <aside class="bg-green-300 lg:h-screen max-w-xs">
+            <nav class="h-320 lg:w-64">
                 <div class="flex items-center pb-8">
                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/>
                                  </svg>
@@ -22,30 +22,26 @@
 
         <ul class="py-2">
             <div class="hover:bg-green-600">
-
+                <a href="../../dashboardView">
 
                     <div class="flex items-center">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-pen"><path d="M11.5 15H7a4 4 0 0 0-4 4v2"/><path d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/><circle cx="10" cy="7" r="4"/></svg>
 
                         <li>
+                            <strong>
                             Profil
-
-
-
-
-
-
+                            </strong>
                          </li>
                     </div>
-
+                </a>
             </div>
         </ul>
 
         <ul class="py-2">
 
             <div class="hover:bg-green-600">
-                <a href="">
+                <a href="../../dashboardForm">
 
                     <div class="flex items-center">
 
@@ -175,5 +171,5 @@
   </div>
 
 
-</body>
 
+</div>

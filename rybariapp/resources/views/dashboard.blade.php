@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    <title>Document</title>
-</head>
+
 <x-_header>
+    <x-_nav>
+    <div class="flex-items items-center justify-center">
+        <div class="flex-col bg-no-repeat flex justify-items-center text-center bg-green-400 bg-opacity-65 m-6 lg:mx-80 p-4">
+            <h3 class="">Vítej! Jsi přihlášen.</h3>
+               </div>
+            </div>
+
+    </x-_nav>
 
 </x-_header>
-
-<body class="bg-[url('../../public/PIC/SUMCI.jpg')] bg-cover h-screen bg-bottom">
-<x-_profil>
-</x-_profil>
-
-</body>
-</html>
