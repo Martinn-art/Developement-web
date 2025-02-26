@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 
-<body class="bg-[url('../../../../public/PIC/SUMCI.jpg')] bg-cover h-screen bg-bottom">
+<body class="bg-[url('../../../../public/PIC/SUMCI.jpg')] bg-cover h-screen bg-bottom bg-no-repeat">
 
 
 

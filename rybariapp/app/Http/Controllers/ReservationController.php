@@ -51,7 +51,10 @@ class ReservationController extends Controller
             'description' => $validated['description'],
             'user_id' => Auth::id(),
         ]);
-        return view('dashboardView', ['reservations' => $reservations])->with('message', 'Rezervace proběhla v pořádku');
+
+        $user = User::where('id', Auth::id())->first();
+
+        return view('dashboardView', ['reservations' => $reservations],['user' => $user])->with('message', 'Rezervace proběhla v pořádku');
 
 
     }

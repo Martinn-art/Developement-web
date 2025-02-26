@@ -77,7 +77,7 @@
 
         <ul class="py-2">
             <div class="hover:bg-green-600">
-                <a href="">
+                <a href="https://rybarizruc.webnode.cz/ceny-povolenek/">
 
                     <div  class="flex items-center">
 
@@ -96,7 +96,7 @@
 
         <ul class="py-2">
             <div class="hover:bg-green-600">
-                 <a href="">
+                 <a href="https://rybariusti.cz/clanky/jak-se-prihlasit-do-ris-a-uhradit-clenske-prispevky-online#:~:text=N%C3%AD%C5%BEe%20naleznete%20stru%C4%8Dn%C3%BD%20n%C3%A1vod%2C%20jak%20se%20do%20syst%C3%A9mu,se%20p%C5%99ihl%C3%A1sit%3F%20Klikn%C4%9Bte%20na%20%22%20Vytvo%C5%99it%20%C3%BA%C4%8Det%20%22.">
 
                      <div  class="flex items-center">
 
