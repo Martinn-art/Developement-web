@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Appointment;
 use App\Models\Reservation;
 use App\Models\User;
 use Illuminate\Auth\Events\Validated;
@@ -15,45 +14,47 @@ class ReservationController extends Controller
 
     public function index()
     {
-        $user = Auth::user();
+        $User = Auth::user();
 
-        $reservations = $user->Reservation;
+        $reservations = $User->reservations;
 
 
-            return view('dashboard', [ 'Reservations' => $reservations,
-    ]);
-
+         return view('dashboard', ['reservations' => $reservations]);
 
     }
-    public function dashboardForm()
+
+    public function dashboardFor()
     {
-                return view('dashboardForm');
 
+
+         return view('dashboardForm');
     }
+
 
     public function StoreForm(Request $request)
+
+
+
     {
+        $user = Auth::user();
+
+        $reservations = $user->reservations;
+
         $validated = $request->validate([
             'date' => ['required','date','after:today'],
             'title' => ['required'],
             'description' => ['nullable'],
         ]);
-        $reservation = Reservation::create([
+        Reservation::create([
             'date' => $validated['date'],
             'title' => $validated ['title'],
             'description' => $validated['description'],
-            'user_id' => auth::id(),
+            'user_id' => Auth::id(),
         ]);
-        return view('dashboardView')-> with('message', 'Rezervace proběhla v pořádku');
+        return view('dashboardView', ['reservations' => $reservations])->with('message', 'Rezervace proběhla v pořádku');
 
 
     }
-
-    public function TableView()
-{
-    return view('dashboardView');
-
-}
 
 
 }

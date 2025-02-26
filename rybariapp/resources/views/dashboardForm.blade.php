@@ -2,13 +2,8 @@
 <x-_nav>
 
 
+    <form action="/dashboardView" method="POST">
 
-
-    <form action="/dashboardForm" method="POST">
-
-        @session('$message')
-            <p>Rezervace proběhla v pořádku</p>
-        @endsession
 
         @csrf
         <div class=" flex flex-col">

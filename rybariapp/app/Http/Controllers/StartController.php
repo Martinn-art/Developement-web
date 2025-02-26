@@ -18,6 +18,4 @@ class StartController extends Controller
 
     }
 
-
-
-
+    

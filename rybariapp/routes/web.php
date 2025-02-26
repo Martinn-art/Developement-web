@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\StartController;
+use App\Http\Controllers\DataReservationController;
+
 
 Route::get('/register', [AuthController::class, 'index']);
 
@@ -13,10 +15,9 @@ Route::get('/login', [AuthController::class, 'login']);
 Route::middleware(['auth'])->group(function () {
 
     Route::get('/dashboard', [ReservationController::class, 'index']);
-    Route::get('/dashboardForm', [ReservationController::class, 'dashboardForm']);
-    Route::post('/dashboardForm', [ReservationController::class, 'StoreForm']);
-    Route::get('/dashboardView', [ReservationController::class, 'StoreForm']);
-    Route::get('/dashboardView', [ReservationController::class, 'TableView']);
+    Route::get('/dashboardForm', [ReservationController::class, 'dashboardFor']);
+    Route::post('/dashboardView', [ReservationController::class, 'StoreForm']);
+    Route::get('/dashboardView', [DataReservationController::class, 'index']);
 });
 
 

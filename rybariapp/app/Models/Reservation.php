@@ -11,8 +11,7 @@ class Reservation extends Model
 {
     use HasFactory;
 
-    protected $table = 'reservation';
-    
+
     protected $fillable = [
         'date',
         'title',
@@ -21,4 +20,10 @@ class Reservation extends Model
 
 
     ];
+    public function user()
+    {
+    return $this->belongsTo(User::class);
+
+    }
+
 }
