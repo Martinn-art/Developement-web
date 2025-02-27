@@ -9,9 +9,7 @@
 
     </h1>
 
-    @session('$message')
-        <p>Registrace proběhla v pořádku</p>
-    @endsession
+   
 
 <div class="flex flex-col">
     <label for="name">Jméno</label>
@@ -26,7 +24,7 @@
 
 @if ($errors->any())
     <div class="alert alert-danger">
-        <ul>
+        <ul class="text bg-red-700 text-xl">
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
             @endforeach

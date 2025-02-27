@@ -1,6 +1,8 @@
     <x-_header>
 
-
+        @session('$message')
+        <p>Registrace proběhla v pořádku</p>
+        @endsession
 
 <div class="flex items-center justify-center">
     <form action="/login" method="POST" class="max-w-xs bg-green-400 bg-opacity-45">
@@ -17,14 +19,19 @@
     <x-button>Přihlásit se</x-button>
     <a class="hover:underline" href="/register">Ještě nemáte účet, klikněte pro založení</a>
 </div>
-@if ($errors->has('email'))
-    <div class="text-red-500">
-        {{ $errors->first('email') }}
 
-    </form>
+<div class="text-red-500">
+@if ($errors->any())
 
-    </div>
+       @foreach ($errors->all() as $error)
+        <li>{{ $error }} </li>
+        @endforeach
 @endif
+    </form>
+</div>
+
+
+
 
 </div>
 

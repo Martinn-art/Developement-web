@@ -54,7 +54,11 @@ public function authenticate(Request $request): RedirectResponse
         'email' => ['required', 'email'],
         'password' => ['required'],
 
+    ],[
+        'email.required' => 'napiš e-mailovou adresu!',
+        'password.required' => 'napiš heslo',
     ]);
+
 if (Auth::attempt($credentials)) {
 $request->session()->regenerate();
 
