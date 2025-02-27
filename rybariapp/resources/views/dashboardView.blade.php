@@ -1,4 +1,4 @@
-<x-_header>
+<x-_headerP>
 <div class="grid grid-col gap-4">
 
     <x-_nav class="p-4">
@@ -52,4 +52,4 @@
 
 
 
-</x-_header>
+</x-_headerP>

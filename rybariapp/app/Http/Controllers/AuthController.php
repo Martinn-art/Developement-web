@@ -71,5 +71,14 @@ return back()->withErrors([
 
 
 }
+public function logout()
+{
+
+    Auth::logout();
+
+
+    return redirect('/');
+}
+
 
 }

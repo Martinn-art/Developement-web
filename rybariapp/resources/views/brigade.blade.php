@@ -1,4 +1,4 @@
-<x-_header>
+<x-_headerP>
 <x-_nav>
 
     <form action="" method="post">
@@ -13,10 +13,11 @@
     </form>
     @if (@session('message'))
     v pořádku kontakt na Vás máme a brzo se vám ozveme
-{{ session('message') }}
+
+        {{ session('message') }}
     @endif
 
 </x-_nav>
 
 
-</x-_header>
+</x-_headerP>

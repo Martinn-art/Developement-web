@@ -10,6 +10,7 @@ use App\Http\Controllers\BrigadeController;
 use App\Http\Controllers\DataBrigadeController;
 
 
+
 Route::get('/register', [AuthController::class, 'index']);
 
 Route::get('/login', [AuthController::class, 'login']);
@@ -23,6 +24,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/brigade', [BrigadeController::class, 'index']);
     Route::post('/brigade', [BrigadeController::class, 'StoreBrigade']);
     Route::get('/Reservations', [DataBrigadeController::class, 'DataB']);
+    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
 });
 
 
