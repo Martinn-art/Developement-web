@@ -8,12 +8,13 @@ use App\Http\Controllers\StartController;
 use App\Http\Controllers\DataReservationController;
 use App\Http\Controllers\BrigadeController;
 use App\Http\Controllers\DataBrigadeController;
+use App\Http\Controllers\ShowBrigadeController;
 
 
 
 Route::get('/register', [AuthController::class, 'index']);
 
-Route::get('/login', [AuthController::class, 'login']);
+Route::get('/login', [AuthController::class, 'login'])->name('login');
 
 Route::middleware(['auth'])->group(function () {
 
@@ -21,9 +22,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboardForm', [ReservationController::class, 'dashboardFor']);
     Route::post('/dashboardView', [ReservationController::class, 'StoreForm']);
     Route::get('/dashboardView', [DataReservationController::class, 'index']);
-    Route::get('/brigade', [BrigadeController::class, 'index']);
-    Route::post('/brigade', [BrigadeController::class, 'StoreBrigade']);
+    Route::get('/brigade', [ShowBrigadeController::class, 'index'])->name('brigade.index');
+    Route::post('/brigade', [BrigadeController::class, 'store'])->name('store.brigade');
     Route::get('/Reservations', [DataBrigadeController::class, 'DataB']);
+    Route::get('/LogOutPage0', [AUthcontroller::class, 'logOutPage'])->name('LogOut');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 });

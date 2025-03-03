@@ -21,12 +21,12 @@
 </div>
 
 <div class="text-red-500">
-@if ($errors->any())
+    @if ($errors->any())
 
        @foreach ($errors->all() as $error)
         <li>{{ $error }} </li>
         @endforeach
-@endif
+    @endif
     </form>
 </div>
 

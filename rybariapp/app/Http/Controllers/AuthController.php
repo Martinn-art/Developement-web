@@ -71,6 +71,15 @@ return back()->withErrors([
 
 
 }
+
+public function logOutPage()
+
+{
+    return view ('LogOutPage');
+
+
+}
+
 public function logout()
 {
 

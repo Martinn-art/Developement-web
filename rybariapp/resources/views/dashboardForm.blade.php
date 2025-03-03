@@ -1,7 +1,11 @@
 <x-_headerP>
-<x-_nav>
 
 
+    <div class="flex flex-row gap-40">
+
+<div>
+        <x-_nav>
+    </x-_nav>
     <form action="/dashboardView" method="POST">
 
 
@@ -16,6 +20,6 @@
         <x-button>Odeslat rezervaci</x-button>
     </div>
     </form>
-
-</x-_nav>
+    </div>
+</div>
 </x-_headerP>

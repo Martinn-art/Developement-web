@@ -7,36 +7,41 @@ use App\Models\Brigade;
 use App\Models\Reservation;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Http\Controllers\Controller;
 
 
 
 class BrigadeController extends Controller
 {
-    public function index()
+
+
+    public function store(Request $request)
     {
-    return view('brigade');
-    }
-
-    public function StoreBrigade(Request $request)
-    {
-        $user = Auth::user();
-
-        $brigade = $user->brigade;
-
-        $validated=$request->validate([
+            $validated = $request->validate([
             'phone'=>['required','min:9','max:21'],
             'notes'=>['nullable'],
+        ], [
+            'phone.required' => 'napiš telefonní číslo',
+            'phone.min:9' => 'napiš telefonní číslo o délce alespoň 9 znaků',
+            'phone.max:21' => 'napiš telefonní číslo ale ne delší než 21 znaků!',
         ]);
-        Brigade::create([
+
+            $brigade = Brigade::create([
             'user_id'=>Auth::id(),
             'user_email'=>Auth::user()->email,
             'user_name'=>Auth::user()->name,
             'phone'=>$validated['phone'],
-            'notes'=>$validated['notes'],
-
+            'notes'=>$validated['notes'] ?? null,
         ]);
-        $user = User::where('id', Auth::id())->first();
 
-        return view('Reservations',  ['brigade' =>$brigade], ['user' =>$user])->with('message','kontakt jsme obdrželi');
+          return redirect()->route('brigade.index')->with('message', 'kontakt jsme obdrželi');
+
+
+
+
+            return redirect()->route('brigade.index')->withErrors(['error' => 'telefonní číslo jste napsal pravděpodobně špatně, požadavek jsme neuložili']);
+
+
     }
+
 }

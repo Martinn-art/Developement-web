@@ -1,7 +1,8 @@
 <x-_headerP>
-<div class="grid grid-col gap-4">
-
+    <div class="flex flex-row gap-40">
+        <div>
     <x-_nav class="p-4">
+    </x-_nav>
 
     <div class="flex flex-col">
 
@@ -42,11 +43,11 @@
 </table>
 
 
-
+</div>
 
 </div>
 </div>
-</x-_nav>
+
 
 </div>
 
