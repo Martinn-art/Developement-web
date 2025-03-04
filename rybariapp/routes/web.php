@@ -9,7 +9,7 @@ use App\Http\Controllers\DataReservationController;
 use App\Http\Controllers\BrigadeController;
 use App\Http\Controllers\DataBrigadeController;
 use App\Http\Controllers\ShowBrigadeController;
-
+use App\Http\Controllers\EditController;
 
 
 Route::get('/register', [AuthController::class, 'index']);
@@ -25,6 +25,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/brigade', [ShowBrigadeController::class, 'index'])->name('brigade.index');
     Route::post('/brigade', [BrigadeController::class, 'store'])->name('store.brigade');
     Route::get('/Reservations', [DataBrigadeController::class, 'DataB']);
+    Route::get('/EditForm', [EditController::class, 'index'])->name('IndexRes');
+    Route::post('/EditForm', [EditController::class, 'update'])->name('EditRes');
+    Route::put('/edit/{id}', [EditController::class, 'update'])->name('edit.update');
     Route::get('/LogOutPage0', [AUthcontroller::class, 'logOutPage'])->name('LogOut');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 

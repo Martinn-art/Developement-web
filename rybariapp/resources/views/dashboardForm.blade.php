@@ -6,6 +6,7 @@
 <div>
         <x-_nav>
     </x-_nav>
+    <div class="flex flex-col">
     <form action="/dashboardView" method="POST">
 
 
@@ -20,6 +21,19 @@
         <x-button>Odeslat rezervaci</x-button>
     </div>
     </form>
+
+    @if ($errors->any())
+    <div class="alert alert-danger">
+    <ul class="text bg-red-700 text-xl">
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
+
+    </ul>
     </div>
+
+    @endif
+    </div>
+</div>
 </div>
 </x-_headerP>

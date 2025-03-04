@@ -26,5 +26,9 @@ public function DataB ()
 
     return view('Reservations', compact('reservations', 'user', 'brigade', 'brigadePosts'));
 }
+ 
+
+
+
 
 }

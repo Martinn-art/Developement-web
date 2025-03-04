@@ -38,13 +38,22 @@ class ReservationController extends Controller
     {
         $user = Auth::user();
 
+        $reservations = Reservation::where('user_id', Auth::id())->get();
+
+        $user = User::where('id', Auth::id())->first();
+
         $reservations = $user->reservations;
 
         $validated = $request->validate([
             'date' => ['required','date','after:today'],
             'title' => ['required'],
             'description' => ['nullable'],
+        ], [
+            'date.required' => 'Zadej datum, kdy si vyzvedneš povolenku',
+            'date.after:todate' => 'Zadej budoucí datum',
+            'title.required' => 'Zadej jakou povolenku',
         ]);
+
         Reservation::create([
             'date' => $validated['date'],
             'title' => $validated ['title'],

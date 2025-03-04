@@ -1,7 +1,7 @@
 <x-_headerP>
-    <div class="flex flex-row gap-40">
+    <div class="flex flex-row gap-30">
         <div>
-    <x-_nav class="p-4">
+    <x-_nav>
     </x-_nav>
 
     <div class="flex flex-col">
@@ -30,7 +30,7 @@
 <table>
     <tbody class="bg-green-200 opacity-60">
   @foreach ($reservations as $reservation)
-    <tr class="">
+    <tr>
             <td class="m-2 p-4 border-blue-800 border-2 border:rounded-2xl"><strong class="underline"> Datum pro vyzvednutí povolenky:</strong><hr>{{ \Carbon\Carbon::parse($reservation->date)->format('d.m.Y') }} </td>
             <td class="m-2 p-4 border-blue-800 border-2"> <strong class="underline"> Druh povolenky:</strong><hr>{{ $reservation->title }} </td>
             <td class="m-2 p-4 border-blue-800 border-2"> <strong class="underline"> Brigády/Změny adres/apod: </strong><hr>{{ $reservation->description }} </td>
