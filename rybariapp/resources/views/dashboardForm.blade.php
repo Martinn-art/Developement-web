@@ -6,6 +6,10 @@
 <div>
         <x-_nav>
     </x-_nav>
+
+    @session('$message')
+<p>('message')</p>
+ @endsession
     <div class="flex flex-col">
     <form action="/dashboardView" method="POST">
 

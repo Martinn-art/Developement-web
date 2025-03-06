@@ -10,6 +10,7 @@ use App\Http\Controllers\BrigadeController;
 use App\Http\Controllers\DataBrigadeController;
 use App\Http\Controllers\ShowBrigadeController;
 use App\Http\Controllers\EditController;
+use App\Http\COntrollers\UserController;
 
 
 Route::get('/register', [AuthController::class, 'index']);
@@ -18,7 +19,7 @@ Route::get('/login', [AuthController::class, 'login'])->name('login');
 
 Route::middleware(['auth'])->group(function () {
 
-    Route::get('/dashboard', [ReservationController::class, 'index']);
+    Route::get('/dashboard', [ReservationController::class, 'index'])->name('dashboard');
     Route::get('/dashboardForm', [ReservationController::class, 'dashboardFor']);
     Route::post('/dashboardView', [ReservationController::class, 'StoreForm']);
     Route::get('/dashboardView', [DataReservationController::class, 'index']);
@@ -28,12 +29,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/EditForm', [EditController::class, 'index'])->name('IndexRes');
     Route::post('/EditForm', [EditController::class, 'update'])->name('EditRes');
     Route::put('/edit/{id}', [EditController::class, 'update'])->name('edit.update');
-    Route::get('/LogOutPage0', [AUthcontroller::class, 'logOutPage'])->name('LogOut');
+
+    Route::get('/LogOutPage0', [Authcontroller::class, 'logOutPage'])->name('LogOut');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('/admin', [UserController::class, 'admin'])->name('admin.page');
 
-});
-
-
+    });
 
 Route::post('/register', [AuthController::class, 'store']);
 Route::post('/login', [AuthController::class, 'authenticate']);

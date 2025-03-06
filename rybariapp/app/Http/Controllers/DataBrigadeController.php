@@ -17,18 +17,18 @@ public function DataB ()
 
     $user = User::where('id', Auth::id())->first();
 
-    $brigade = Brigade::where('user_id', Auth::id())->get();
+    $brigades = Brigade::where('user_id', Auth::id())->get();
 
-    $brigadePosts = [];
-    foreach ($brigade as $brig) {
-        $brigadePosts[] = $brig->posts;
-    }
+   /* $brigadePosts = [];
+    foreach ($brigade as $brigades) {
+        $brigadePosts[] = $brigades->posts;
+    }*/
 
-    return view('Reservations', compact('reservations', 'user', 'brigade', 'brigadePosts'));
+
+
+    return view('Reservations', compact('reservations', 'user', 'brigades'));
+
 }
- 
-
-
 
 
 }

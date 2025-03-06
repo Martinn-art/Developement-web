@@ -8,10 +8,10 @@
         <table>
         <tbody>
 
-                @if (($brigade))
+                @if (($brigades !== NULL))
                     <p class="text-green-700 bg-blue-400 h-min opacity-75 text-2xl m-4 p-2"><strong> Máš zájem o brigádu super!</strong></p>
                 @else
-                    <p class="text-red-600 bg-slate-100 h-min text-2xl"><strong class="m-8"> Neobdrželi jsme zájem o brigádu přez tuto app</strong></p>
+                    <p class="text-red-600 bg-slate-100 h-min text-2xl"><strong class="m-8"> Neobdrželi jsme zájem o brigádu přes tuto app</strong></p>
                 @endif
 
         </tbody>

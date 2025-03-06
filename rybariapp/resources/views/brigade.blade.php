@@ -9,7 +9,9 @@
 
 
 
-
+        @session('$message')
+        <p>('$message')</p>
+        @endsession
 
 
 <div class="item">
