@@ -34,12 +34,7 @@ class BrigadeController extends Controller
             'notes'=>$validated['notes'] ?? null,
         ]);
 
-          return redirect()->route('brigade.index')->with('message', 'kontakt jsme obdrželi');
-
-
-
-
-            return redirect()->route('brigade.index')->withErrors(['error' => 'telefonní číslo jste napsal pravděpodobně špatně, požadavek jsme neuložili']);
+        return redirect()->route('brigade.index')->with('message', 'kontakt jsme obdrželi');
 
 
     }

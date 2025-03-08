@@ -15,6 +15,8 @@ class DataReservationController extends Controller
 
        $user = User::where('id', Auth::id())->first();
 
+       
+
         return view('dashboardView', compact('reservations','user'));
 
     }

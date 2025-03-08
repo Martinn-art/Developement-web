@@ -9,9 +9,6 @@
 
 
 
-        @session('$message')
-        <p>('$message')</p>
-        @endsession
 
 
 <div class="item">
@@ -31,15 +28,18 @@
 
        @if ($errors->any())
        <div class="alert alert-danger">
-       <ul class="text bg-red-700 text-xl">
-   @foreach ($errors->all() as $error)
-       <li>{{ $error }}</li>
-   @endforeach
-
-</ul>
-</div>
-</div>
+           <ul class="text bg-red-700 text-xl">
+               @foreach ($errors->all() as $error)
+                   <li>{{ $error }}</li>
+               @endforeach
+           </ul>
+       </div>
+   @elseif (session('message'))
+       <div class="alert alert-success bg-green-600">
+           {{ session('message') }}
+       </div>
    @endif
+
 </section>
         </div>
 </div>

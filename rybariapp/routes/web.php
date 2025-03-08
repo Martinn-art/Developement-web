@@ -29,7 +29,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/EditForm', [EditController::class, 'index'])->name('IndexRes');
     Route::post('/EditForm', [EditController::class, 'update'])->name('EditRes');
     Route::put('/edit/{id}', [EditController::class, 'update'])->name('edit.update');
-
     Route::get('/LogOutPage0', [Authcontroller::class, 'logOutPage'])->name('LogOut');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/admin', [UserController::class, 'admin'])->name('admin.page');
