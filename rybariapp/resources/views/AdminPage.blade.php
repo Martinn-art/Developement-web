@@ -41,7 +41,7 @@
      <td class="m-2 p-4 border-violet-100 border-2"><strong class="underline">E-mail:</strong> <hr>{{ $brigade->user_email }}</td>
      <td class="m-2 p-4 border-violet-100 border-2"><strong class="underline"> Jméno:</strong> <hr>{{ $brigade->user_name}}</td>
      <td class="m-2 p-4 border-violet-100 border-2"><strong class="underline">Číslo telefonu:</strong><hr>{{ $brigade->phone }}</td>
-     <td class="m-2 p-4 border-violet-100 border-2"><strong class="underline">Nepovinný Popisek pro zadavtele brigády:</strong><hr>{{ $brigade->title }}</td>
+     <td class="m-2 p-4 border-violet-100 border-2"><strong class="underline">Nepovinný Popisek pro zadavatele brigády:</strong><hr>{{ $brigade->title }}</td>
 
        </tr>
        @endforeach
