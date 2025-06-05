@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
     <title>Document</title>
 </head>
-<body class="bg-blue-950">
+<body class="bg-blue-950 z-[-10]">
     <div>
     <h1 class="place self-start bg-blue-800 text-2xl text-white w-min h-min">MARTIN.NET</h1>
 

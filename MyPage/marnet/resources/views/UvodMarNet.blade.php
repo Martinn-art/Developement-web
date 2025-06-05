@@ -3,7 +3,7 @@
 
     </x-NavMarNet>
 
-    <div class="place-items-center justify-center" >
+    <div class="place-items-center justify-center z-[-20]" >
     <h1 class=" text-white">Vítám tě na svém webu</h1>
     <br>
     <br>

@@ -117,8 +117,7 @@
             </flux:navlist>
         </flux:sidebar>
 
-        {{ $slot }}
-
+     
         @fluxScripts
     </body>
 </html>
