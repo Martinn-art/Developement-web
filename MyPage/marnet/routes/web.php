@@ -8,6 +8,8 @@ Route::get('/UvodMarNet', [StartController::class, 'view'])->name('home');
 Route::get('/dashboard', [StartController::class, 'uvod'])->name('uvod');
 Route::get('/VCemPracuji', [StartController::class, 'viewVCem']);
 Route::get('/Kontakty', [StartController::class, 'Kontakt']);
+Route::get('/NapadumSeMezeNekladou', [StartController::class, 'JedenNapad']);
+
 
 Route::view('', 'dashboard');
 

@@ -29,5 +29,10 @@ public function Kontakt ()
     return view ('Kontakty');
 }
 
+public function JedenNapad ()
+{
+    return view ('NapadumSeMezeNekladou');
+}
+
 }
 

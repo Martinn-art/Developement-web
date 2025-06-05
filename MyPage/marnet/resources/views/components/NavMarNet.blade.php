@@ -24,7 +24,7 @@
             <a href="#" class="text-white hover:bg-gray-600 px-4 py-2 rounded-b lg:border-t-2 lg:border-t-white" @mouseenter="open = true" @mouseleave="open = false">Ukázky</a>
             <!-- Dropdown menu -->
             <ul x-show="open" x-transition class="absolute left-0 z-50 w-48 bg-gray-800 text-white rounded shadow-lg">
-                <li><a @mouseenter="open = true" @mouseleave="open = false" href="/GuestPage1" class="block px-4 py-2 hover:bg-gray-600 z-10">Nápadům se meze nekladou</a></li>
+                <li><a @mouseenter="open = true" @mouseleave="open = false" href="/NapadumSeMezeNekladou" class="block px-4 py-2 hover:bg-gray-600 z-10">Nápadům se meze nekladou</a></li>
                 <li><a @mouseenter="open = true" @mouseleave="open = false" href="/GuestPage2" class="block px-4 py-2 hover:bg-gray-600 z-10">I Živnostníci mohou být vidět</a></li>
                  </ul>
         </li>
@@ -70,7 +70,7 @@
         <li class="" >
             <h3 class="text-white px-4 py-2 rounded-b border">Ukázky</h3>
             <ul x-show="open" x-transition class="mt-2 z-50 w-48 bg-gray-800 text-white rounded shadow-lg">
-                <p><a href="/GuestPage1" class="block px-4 py-2 hover:bg-gray-600 z-10">Nápadům se meze nekladou</a></p>
+                <p><a href="/NapadumSeMezeNekladou" class="block px-4 py-2 hover:bg-gray-600 z-10">Nápadům se meze nekladou</a></p>
                 <p><a href="/GuestPage2" class="block px-4 py-2 hover:bg-gray-600 z-10">I Živnostníci mohou být vidět</a></p>
             </ul>
         </li>
