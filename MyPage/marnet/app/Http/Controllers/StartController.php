@@ -33,6 +33,10 @@ public function JedenNapad ()
 {
     return view ('NapadumSeMezeNekladou');
 }
+public function viewMoznosti()
+{
+    return view ('Moznosti');
+}
 
 }
 

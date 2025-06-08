@@ -29,12 +29,12 @@
                  </ul>
         </li>
         <li class="relative" x-data="{ open: false }">
-            <a href="#" class="text-white hover:bg-gray-600 px-4 py-2 rounded-b lg:border-t-2 lg:border-t-white" @mouseenter="open = true" @mouseleave="open = false">Co očekávat</a>
+            <a href="#" class="text-white hover:bg-gray-600 px-4 py-2 rounded-b lg:border-t-2 lg:border-t-white" @mouseenter="open = true" @mouseleave="open = false">Chci web v laravelu</a>
 
             <!-- Dropdown menu -->
             <ul x-show="open" x-transition class="absolute left-0 w-48 z-50 bg-gray-800 text-white rounded shadow-lg">
-                <li><a @mouseenter="open = true" @mouseleave="open = false" href="/LoginP" class="block px-4 py-2 hover:bg-gray-600 z-10">Z hlediska peněz</a></li>
-                <li><a @mouseenter="open = true" @mouseleave="open = false" href="/RegistrationP" class="block px-4 py-2 hover:bg-gray-600 z-10">Kde budeš vidět</a></li>
+                <li><a @mouseenter="open = true" @mouseleave="open = false" href="/Moznosti" class="block px-4 py-2 hover:bg-gray-600 z-10">Jaké jsou možnosti?</a></li>
+                <li><a @mouseenter="open = true" @mouseleave="open = false" href="/bytVidet" class="block px-4 py-2 hover:bg-gray-600 z-10">Kde chceš #býtvidět?</a></li>
                  </ul>
         </li>
 
@@ -76,10 +76,10 @@
         </li>
 
         <li>
-            <h3 href="#" class="text-white px-4 py-2 rounded-b border">Co očekávat</h3>
+            <h3 href="#" class="text-white px-4 py-2 rounded-b border">Chci web v laravelu</h3>
             <ul class=" mt-2 w-48 z-50 bg-gray-800 text-white rounded shadow-lg">
-                <li><a href="/LoginP" class="block px-4 py-2 hover:bg-gray-600 z-10">Z hlediska peněz</a></li>
-                <li><a href="/RegistrationP" class="block px-4 py-2 hover:bg-gray-600 z-10">Kde budeš vidět</a></li>
+                <li><a href="/Moznosti" class="block px-4 py-2 hover:bg-gray-600 z-10">Jaké jsou možnosti?</a></li>
+                <li><a href="/bytVidet" class="block px-4 py-2 hover:bg-gray-600 z-10">Kde chceš #býtVidět?</a></li>
             </ul>
         </li>
 
