@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\IdealProject;
 use App\Models\SocialScore;
+use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
+use League\Flysystem\ResolveIdenticalPathConflict;
+use phpDocumentor\Reflection\Types\Null_;
 
 class FormController extends Controller
 {
@@ -38,5 +42,31 @@ class FormController extends Controller
 
 
 
+
 }
+public function viewObsah()
+  {
+    return view('Obsah');
+  }
+
+  public function FormC(Request $request)
+    {
+    if (!empty($request->input('email_confirmed'))) {
+    abort(403, 'Přístup zamítnut');
+        }
+
+    $form =$request->validate([
+        'vybrane_moznosti'=>'string|nullable',
+        'VlastniNapad'=>'string|nullable',
+    ]);
+
+    IdealProject::create([
+        'vybrane_moznosti' =>$form['vybrane_moznosti'] ?? null,
+        'VlastniNapad' =>$form['VlastniNapad'] ?? null,
+
+    ]);
+
+    return redirect()->back()->with('success', 'Hodnocení bylo uloženo!');
+
+  }
 }

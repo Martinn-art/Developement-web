@@ -3,6 +3,7 @@
 
 </x-NavMarNet>
 
+<h2 class="grid place-content-center text-white font-bold mb-2">V sociálních sítích nepracuji, ale domluvit lze ledascos</h2>
 <!-- Blade formulář -->
 <form class="max-w-md mx-auto p-4 space-y-6 bg-white rounded shadow-md" action="{{ route('form') }}" method="POST">
   @csrf

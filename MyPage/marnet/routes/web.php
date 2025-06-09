@@ -13,8 +13,10 @@ Route::get('/Kontakty', [StartController::class, 'Kontakt']);
 Route::get('/NapadumSeMezeNekladou', [StartController::class, 'JedenNapad']);
 Route::get('/Moznosti', [StartCOntroller::class, 'viewMoznosti']);
 Route::get('/bytVidet', [FormController::class, 'viewBytVidet']);
+Route::get('/Obsah', [FormController::class, 'viewObsah']);
 
 Route::post('/bytVidet', [FormController::class, 'UlozMe'])->name('form');
+Route::post('/Obsah', [FormController::class, 'FormC'])->name('formC');
 
 
 Route::view('', 'dashboard');

@@ -25,7 +25,7 @@
             <!-- Dropdown menu -->
             <ul x-show="open" x-transition class="absolute left-0 z-50 w-48 bg-gray-800 text-white rounded shadow-lg">
                 <li><a @mouseenter="open = true" @mouseleave="open = false" href="/NapadumSeMezeNekladou" class="block px-4 py-2 hover:bg-gray-600 z-10">Nápadům se meze nekladou</a></li>
-                <li><a @mouseenter="open = true" @mouseleave="open = false" href="/GuestPage2" class="block px-4 py-2 hover:bg-gray-600 z-10">I Živnostníci mohou být vidět</a></li>
+                <li><a @mouseenter="open = true" @mouseleave="open = false" href="/GuestPage2" class="block px-4 py-2 hover:bg-gray-600 z-10">Něco se chystá...</a></li>
                  </ul>
         </li>
         <li class="relative" x-data="{ open: false }">
@@ -35,6 +35,7 @@
             <ul x-show="open" x-transition class="absolute left-0 w-48 z-50 bg-gray-800 text-white rounded shadow-lg">
                 <li><a @mouseenter="open = true" @mouseleave="open = false" href="/Moznosti" class="block px-4 py-2 hover:bg-gray-600 z-10">Jaké jsou možnosti?</a></li>
                 <li><a @mouseenter="open = true" @mouseleave="open = false" href="/bytVidet" class="block px-4 py-2 hover:bg-gray-600 z-10">Kde chceš #býtvidět?</a></li>
+                <li><a @mouseenter="open = true" @mouseleave="open = false" href="/Obsah" class="block px-4 py-2 hover:bg-gray-600 z-10">Co by jsi rád měl za obsah?</a></li>
                  </ul>
         </li>
 
@@ -71,7 +72,7 @@
             <h3 class="text-white px-4 py-2 rounded-b border">Ukázky</h3>
             <ul x-show="open" x-transition class="mt-2 z-50 w-48 bg-gray-800 text-white rounded shadow-lg">
                 <p><a href="/NapadumSeMezeNekladou" class="block px-4 py-2 hover:bg-gray-600 z-10">Nápadům se meze nekladou</a></p>
-                <p><a href="/GuestPage2" class="block px-4 py-2 hover:bg-gray-600 z-10">I Živnostníci mohou být vidět</a></p>
+                <p><a href="/GuestPage2" class="block px-4 py-2 hover:bg-gray-600 z-10">Něco se chystá...</a></p>
             </ul>
         </li>
 
@@ -80,6 +81,7 @@
             <ul class=" mt-2 w-48 z-50 bg-gray-800 text-white rounded shadow-lg">
                 <li><a href="/Moznosti" class="block px-4 py-2 hover:bg-gray-600 z-10">Jaké jsou možnosti?</a></li>
                 <li><a href="/bytVidet" class="block px-4 py-2 hover:bg-gray-600 z-10">Kde chceš #býtVidět?</a></li>
+                <li><a href="/Obsah" class="block px-4 py-2 hover:bg-gray-600 z-10">Co by jsi rád měl za obsah?</a></li>
             </ul>
         </li>
 
